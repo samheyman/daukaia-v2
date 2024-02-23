@@ -8,7 +8,7 @@ interface Props {
 const { href, text, classnames } = Astro.props;
 ---
 
-<button type="button" onclick={href} class:list={["font-bold py-2 px-4 rounded", classnames ]}>
+<button type="button" onclick=`location.href='${href}'` class:list={["font-bold py-2 px-4 rounded", classnames ]}>
 	{text}
 </button>
 <style>
