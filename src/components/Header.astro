@@ -1,0 +1,46 @@
+<header>
+	<div class="container">
+		<div>
+			<img class="logo" src="./images/daukaia-logo.png" />
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a aria-current="page" href="about">Who we are</a></li>
+				<li><a href="about">What we do</a></li>
+				<li><a href="contact">Ignite change</a></li>
+				<li class="call-to-action"><a href="donate">Donate</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<style>
+	header {
+		height: 116px;
+		display: flex;
+		align-items: center;
+	}
+  	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	li {
+		display: inline;
+		margin-right: 20px ;
+		font-weight: 500;
+	}
+	li:last-child {
+		margin-right: 0;
+	}
+	.logo {
+		height: 80px;
+		border: 3px solid hsl(var(--primary));
+		border-radius: 50%;
+	}
+	.call-to-action {
+		background-color: hsl(var(--accent));
+		padding: 1em 2em;
+		border-radius: 6px;
+		color: white;
+	}
+</style>
